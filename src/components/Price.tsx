@@ -1,9 +1,6 @@
 "use client"
 
 import React, { useEffect, useState } from 'react'
-
-
-
 type TypeProps = {
     price: number,
     id: number,
@@ -12,7 +9,7 @@ type TypeProps = {
 
 
 
-const Price = ( { price , id, options }:TypeProps ) => {
+const Price = ( { price , options }:TypeProps ) => {
     const [totalPrice, setTotalPrice] = useState(price);
     const [quantity, setQuantity] = useState(1);
     const [selected, setSelected ] = useState(0);
