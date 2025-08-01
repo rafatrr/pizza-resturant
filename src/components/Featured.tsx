@@ -11,7 +11,10 @@ const Featured = () => {
           {/* sigleItem */}
          {featuredProducts.map((item) => {
           return(
+
+
             <Link href="/menu" key={item.id} className='cursor-pointer' >
+
             <div className="w-screen h-[60vh] flex flex-col items-center justify-around p-4  hover:bg-fuchsia-50 transition-all duration-300 md:w-[50vw] lg:w-[33vw] xl:w-[25vw] xl:h-[90vh]">
             {/* imageContiner */}
             {item.img &&
@@ -27,18 +30,15 @@ const Featured = () => {
             <button className='bg-red-500 text-white p-2 rounded-sm'>Add to cart</button>
            </div>
           </div>
-          </Link>
-          )
-
-
-         })}
           
+          </Link>
 
 
 
-
+          )
+         }
+         )}
         </div>
-
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import CountDown from './CountDown'
 const Offer = () => {
   return (
@@ -13,7 +14,7 @@ const Offer = () => {
         <p className="text-white xl:text-xl"> Progressively simplify effective e-toilers and process-centric methods
         of empowerment. Quickly pontificate parallel.</p>
         <CountDown/>
-        <button className='text-white bg-red-500 rounded-sm py-3 px-6 cursor-pointer'>Order Now!</button>
+        <Link href="/menu" className='text-white bg-red-500 rounded-sm py-3 px-6 cursor-pointer'>Order Now!</Link>
 
       </div>
 
